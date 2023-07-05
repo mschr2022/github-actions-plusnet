@@ -1,0 +1,9 @@
+name: display mem usage
+
+on: [workflow_dispatch]
+
+jobs:
+  mem-usage-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: free -h
